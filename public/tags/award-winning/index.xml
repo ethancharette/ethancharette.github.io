@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Award Winning on Ethan&#39;s Desk</title>
+    <link>http://localhost:1313/tags/award-winning/</link>
+    <description>Recent content in Award Winning on Ethan&#39;s Desk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>ethan.william.charette@outlook.com (Ethan Charette)</managingEditor>
+    <webMaster>ethan.william.charette@outlook.com (Ethan Charette)</webMaster>
+    <copyright>© 2026 Ethan Charette</copyright>
+    <atom:link href="http://localhost:1313/tags/award-winning/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>

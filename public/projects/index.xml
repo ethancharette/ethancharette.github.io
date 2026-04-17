@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Work! on Ethan&#39;s Desk</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in My Work! on Ethan&#39;s Desk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>ethan.william.charette@outlook.com (Ethan Charette)</managingEditor>
+    <webMaster>ethan.william.charette@outlook.com (Ethan Charette)</webMaster>
+    <copyright>© 2026 Ethan Charette</copyright>
+    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Maid Mayhem</title>
+      <link>http://localhost:1313/projects/maid-mayhem/</link>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/projects/maid-mayhem/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/maid-mayhem/featured.png" />
+    </item>
+    
+    <item>
+      <title>Hardly Workin&#39;</title>
+      <link>http://localhost:1313/projects/hardly-workin/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/projects/hardly-workin/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/hardly-workin/featured.png" />
+    </item>
+    
+    <item>
+      <title>Mind Over Matter</title>
+      <link>http://localhost:1313/projects/mind-over-matter/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/projects/mind-over-matter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Flicker</title>
+      <link>http://localhost:1313/projects/flicker/</link>
+      <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/projects/flicker/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tank!</title>
+      <link>http://localhost:1313/projects/tanks/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/projects/tanks/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

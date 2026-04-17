@@ -1,0 +1,38 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Ethan's Desk"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "ethansdesk-icon.jpg"
+  # secondaryLogo = "img/secondary-logo.png"
+   description = "Thanks for checking out my portfolio!"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+ [params.author]
+   name = "Ethan Charette"
+   email = "ethan.william.charette@outlook.com"
+   image = "img/headshot.jpg"
+   imageQuality = 96
+   headline = "Indie Game Developer"
+   bio = "I love games!"
+   links = [
+     { email = "mailto:ethan.william.charette@outlook.com" },
+#     { discord = "https://discord.gg/invitecode" },
+     { linkedin = "https://www.linkedin.com/in/ethan-charette-17526b32b/"},
+     { github = "https://github.com/ethancharette" },
+     { itch-io = "https://ethancharette.itch.io/" },
+     { instagram = "https://www.instagram.com/ethansdesk" },
+#     { pinterest = "https://pinterest.com/username" },
+#     { spotify = "https://open.spotify.com/user/userid" },
+#     { stack-overflow = "https://stackoverflow.com/users/userid/username" },
+#     { steam = "https://steamcommunity.com/profiles/userid" },
+#     { tiktok = "https://tiktok.com/@username" },
+#     { twitch = "https://twitch.tv/username" },
+#     { youtube = "https://youtube.com/username" },
+   ]

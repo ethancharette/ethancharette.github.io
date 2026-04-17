@@ -1,0 +1,90 @@
+{{/* Used by
+  1. list.html and term.html (when the cardView option is enabled)
+  2. Recent articles template (when the cardView option is enabled)
+  3. Shortcode list.html
+*/}}
+{{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
+
+{{ $page := .Page }}
+{{ $featured := "" }}
+{{ $featuredURL := "" }}
+{{ $thumbnailAspectRatio := site.Params.thumbnailAspectRatio | default "1.5" }}
+{{ $thumbnailAspectRatio = replaceRE "[^0-9.]" "" $thumbnailAspectRatio }}
+{{ if eq $thumbnailAspectRatio "" }}{{ $thumbnailAspectRatio = "1.5" }}{{ end }}
+{{ if not .Params.hideFeatureImage }}
+  {{/* frontmatter */}}
+  {{ with $page }}
+    {{ with .Params.featureimage }}
+      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+        {{ if site.Params.hotlinkFeatureImage }}
+          {{ $featuredURL = . }}
+        {{ else }}
+          {{ $featured = resources.GetRemote . }}
+        {{ end }}
+      {{ else }}
+        {{ $featured = resources.Get . }}
+      {{ end }}
+    {{ end }}
+
+    {{/* page resources */}}
+    {{ if not (or $featured $featuredURL) }}
+      {{ $images := .Resources.ByType "image" }}
+      {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+        {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* fallback to default */}}
+    {{ if not (or $featured $featuredURL) }}
+      {{ $default := site.Store.Get "defaultFeaturedImage" }}
+      {{ if $default.url }}
+        {{ $featuredURL = $default.url }}
+      {{ else if $default.obj }}
+        {{ $featured = $default.obj }}
+      {{ end }}
+    {{ end }}
+
+    {{/* generate image URL if not hotlink */}}
+    {{ if not $featuredURL }}
+      {{ with $featured }}
+        {{ $featuredURL = .RelPermalink }}
+        {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
+          {{ $featuredURL = (.Resize "600x").RelPermalink }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+<article class="article-link--card flex gap-4 items-center p-4 rounded-lg border border-neutral-300 dark:border-neutral-600">
+
+  {{ with $featuredURL }}
+    <img
+      src="{{ . }}"
+      class="w-24 h-16 object-cover rounded-md flex-shrink-0"
+    />
+  {{ end }}
+
+  <div class="flex flex-col min-w-0">
+
+    <a
+      href="{{ $page.RelPermalink }}"
+      class="font-bold text-lg hover:underline"
+    >
+      {{ .Title }}
+    </a>
+
+    <div class="text-sm text-neutral-500">
+      {{ partial "article-meta/basic.html" . }}
+    </div>
+
+    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <div class="text-sm text-neutral-400 line-clamp-2">
+        {{ .Summary | plainify }}
+      </div>
+    {{ end }}
+
+  </div>
+
+</article>

@@ -1,0 +1,30 @@
+{{ $image := .Params.image }}
+{{ $title := .Title }}
+
+{{ with .Params.image }}
+  {{ $image = . }}
+{{ end }}
+
+<div class="project-hero">
+
+  {{ with $image }}
+    <img src="{{ . }}" alt="{{ $title }}" class="project-hero__image">
+  {{ end }}
+
+  <div class="project-hero__overlay"></div>
+
+  <div class="project-hero__content">
+    <h1 class="project-hero__title">{{ $title }}</h1>
+
+    {{ with .Params.subtitle }}
+      <p class="project-hero__subtitle">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ with .Params.credit }}
+    <div class="project-hero__credit">
+      {{ . }}
+    </div>
+  {{ end }}
+
+</div>
