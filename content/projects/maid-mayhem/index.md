@@ -5,7 +5,7 @@ tags: ["3D Unity | Technical Lead"]
 
 showHero: true
 heroStyle: "custom"
-image: "/maid-mayhem/header-hero.png"
+image: "featured.png"
 subtitle: "2–4 Player Party Brawler | Technical Lead"
 credit: "Art by Emma Little"
 ---

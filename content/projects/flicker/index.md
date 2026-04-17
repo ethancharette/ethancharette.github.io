@@ -2,7 +2,12 @@
 title: "Flicker"
 date: 2024-04-16
 tags: ["2.5D Unity | Programmer"]
-layout: "simple"
+
+showHero: true
+heroStyle: "custom"
+image: "featured.png"
+subtitle: "Ironic 2D Puzzle Platfomer | Generalist Programmer"
+credit: "Art by Emma Little"
 ---
 
 ## Gameplay Video

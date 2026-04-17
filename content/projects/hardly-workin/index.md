@@ -5,7 +5,7 @@ tags: ["3D Unity | Producer & Programmer"]
 
 showHero: true
 heroStyle: "custom"
-image: "/hardly-workin/header-hero.png"
+image: "featured.png"
 subtitle: "Goofy Office Simulator | Producer, Generalist Programmer"
 credit: "Art by Emma Little"
 ---

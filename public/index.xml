@@ -48,7 +48,7 @@
       <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
       <guid>http://localhost:1313/projects/flicker/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/flicker/featured.png" />
     </item>
     
     <item>
