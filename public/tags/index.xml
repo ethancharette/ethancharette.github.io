@@ -12,21 +12,21 @@
     <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>3D Unity | Technical Lead</title>
-      <link>http://localhost:1313/tags/3d-unity--technical-lead/</link>
+      <title>3D Party Brawler | Technical Lead</title>
+      <link>http://localhost:1313/tags/3d-party-brawler--technical-lead/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
       <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
-      <guid>http://localhost:1313/tags/3d-unity--technical-lead/</guid>
+      <guid>http://localhost:1313/tags/3d-party-brawler--technical-lead/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>3D Unity | Producer &amp; Programmer</title>
-      <link>http://localhost:1313/tags/3d-unity--producer--programmer/</link>
+      <title>3D Office Simulator | Producer &amp; Programmer</title>
+      <link>http://localhost:1313/tags/3d-office-simulator--producer--programmer/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
-      <guid>http://localhost:1313/tags/3d-unity--producer--programmer/</guid>
+      <guid>http://localhost:1313/tags/3d-office-simulator--producer--programmer/</guid>
       <description></description>
       
     </item>
@@ -42,11 +42,11 @@
     </item>
     
     <item>
-      <title>2.5D Unity | Programmer</title>
-      <link>http://localhost:1313/tags/2.5d-unity--programmer/</link>
+      <title>2.5D PUzzle Platformer | Generalist Programmer</title>
+      <link>http://localhost:1313/tags/2.5d-puzzle-platformer--generalist-programmer/</link>
       <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
       <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
-      <guid>http://localhost:1313/tags/2.5d-unity--programmer/</guid>
+      <guid>http://localhost:1313/tags/2.5d-puzzle-platformer--generalist-programmer/</guid>
       <description></description>
       
     </item>
@@ -57,6 +57,36 @@
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
       <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
       <guid>http://localhost:1313/tags/3d-unity--vertical-slice/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2.5D Unity | Programmer</title>
+      <link>http://localhost:1313/tags/2.5d-unity--programmer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/tags/2.5d-unity--programmer/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3D Unity | Producer &amp; Programmer</title>
+      <link>http://localhost:1313/tags/3d-unity--producer--programmer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/tags/3d-unity--producer--programmer/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3D Unity | Technical Lead</title>
+      <link>http://localhost:1313/tags/3d-unity--technical-lead/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>ethan.william.charette@outlook.com (Ethan Charette)</author>
+      <guid>http://localhost:1313/tags/3d-unity--technical-lead/</guid>
       <description></description>
       
     </item>

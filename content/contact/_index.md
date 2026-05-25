@@ -3,9 +3,7 @@ title: "Contact"
 layout: "simple"
 ---
 
-Say hi, I don't bite (usually)
-
----
+I'm always open to discussing game development, opportunities, or collaboration!
 
 ### My Socials
 
@@ -28,6 +26,8 @@ Say hi, I don't bite (usually)
 </a>
 
 </div>
+
+---
 
 <div class="resume-container">
 <div class="resume-title">My Resume</div>
