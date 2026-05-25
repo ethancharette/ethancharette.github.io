@@ -9,15 +9,15 @@ title = "Ethan's Desk"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "ethansdesk-icon.jpg"
-  # secondaryLogo = "img/secondary-logo.png"
-   description = "Thanks for checking out my portfolio!"
-  # copyright = "Copy, _right?_ :thinking_face:"
+  logo = "img/ethansdesk-icon.png"
+  secondaryLogo = "img/ethansdesk-icon.png"
+  description = "Thanks for checking out my portfolio!"
+  copyright = "© 2026 Ethan's Desk. All rights reserved."
 
  [params.author]
    name = "Ethan Charette"
    email = "ethan.william.charette@outlook.com"
-   image = "img/headshot.jpg"
+   image = "img/ethansdesk-icon.png"
    imageQuality = 96
    headline = "Indie Game Developer"
    bio = "I love games!"
