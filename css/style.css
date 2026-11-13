@@ -1,5 +1,6 @@
 :root{--bg:#f5f1e8;--card:#fffdf8;--ink:#2a2723;--mute:#716b62;--line:#3b3631;--acc:#a9d3b0;--accink:#22301f;--link:#3f7a52;--hl:#f6e6a6;--sh:#d9d0bf;--tink:#2a2723;--t1:#bfdcc6;--t2:#f4d9bd;--t3:#f3e6b0;--t4:#c9e0e6;--t5:#efd2d6}
-@media(prefers-color-scheme:dark){:root{--bg:#1d1b19;--card:#272421;--ink:#efe9dd;--mute:#a39b8e;--line:#5a534a;--acc:#8fc79f;--accink:#14201a;--link:#9fd3ab;--hl:#5a5128;--sh:#0f0e0d;--tink:#f0eadf;--t1:#3f6b4e;--t2:#7d5f48;--t3:#77703f;--t4:#3f6b76;--t5:#75505a}}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1b19;--card:#272421;--ink:#efe9dd;--mute:#a39b8e;--line:#5a534a;--acc:#8fc79f;--accink:#14201a;--link:#9fd3ab;--hl:#5a5128;--sh:#0f0e0d;--tink:#f0eadf;--t1:#3f6b4e;--t2:#7d5f48;--t3:#77703f;--t4:#3f6b76;--t5:#75505a}}
+:root[data-theme="dark"]{--bg:#1d1b19;--card:#272421;--ink:#efe9dd;--mute:#a39b8e;--line:#5a534a;--acc:#8fc79f;--accink:#14201a;--link:#9fd3ab;--hl:#5a5128;--sh:#0f0e0d;--tink:#f0eadf;--t1:#3f6b4e;--t2:#7d5f48;--t3:#77703f;--t4:#3f6b76;--t5:#75505a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "Karla",system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -64,3 +65,81 @@ footer{border-top:2px solid var(--line);background:var(--card);padding:20px 0;co
 .gallery figure{margin:0}
 .gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;border:2px solid var(--line);border-radius:4px;box-shadow:5px 5px 0 var(--sh)}
 .gallery figcaption{font:500 .8rem "JetBrains Mono",ui-monospace,monospace;color:var(--mute);margin-top:10px}
+
+/* ---- desk theme ---- */
+header{border-bottom-width:3px}
+.hand{font-family:"Patrick Hand","Comic Sans MS","Chalkboard SE",sans-serif}
+.hi{font:400 1.8rem/1.15 "Patrick Hand","Comic Sans MS","Chalkboard SE",sans-serif;margin:8px 0 6px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.btn.alt{background:var(--card);color:var(--ink)}
+.btn.big{font-size:1rem;padding:12px 24px}
+/* sticky notes */
+.award,.tldr{position:relative;background:var(--t3);color:var(--tink);border:0;border-radius:2px;padding:20px 22px 16px;transform:rotate(-1deg);box-shadow:3px 4px 0 rgba(0,0,0,.13),0 12px 14px -10px rgba(0,0,0,.4);font:400 1.2rem/1.3 "Patrick Hand","Comic Sans MS","Chalkboard SE",sans-serif;transition:transform .18s;margin:26px 0}
+.award:hover,.tldr:hover{transform:rotate(0) translateY(-2px)}
+.award::before,.tldr::before,.pinned::before{content:"";position:absolute;top:-8px;left:50%;width:15px;height:15px;margin-left:-7px;border-radius:50%;background:#d1584a;box-shadow:inset -2px -2px 0 rgba(0,0,0,.25),1px 3px 3px rgba(0,0,0,.35)}
+.tldr{background:var(--t5);transform:rotate(.8deg);max-width:560px}
+.tldr .nt{font:400 1.15rem "Patrick Hand","Comic Sans MS","Chalkboard SE",sans-serif;margin-bottom:2px}
+.tldr ul{list-style:none;padding:0;margin:0}.tldr li{margin:3px 0}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;margin:24px 0}
+.notes .award{margin:0;font-size:1.1rem}.notes .award:nth-child(2){background:var(--t5);transform:rotate(1.2deg)}.notes .award:nth-child(3){background:var(--t4);transform:rotate(-.6deg)}.notes .award:nth-child(4){background:var(--t1);transform:rotate(.9deg)}
+.notes .award:hover{transform:rotate(0) translateY(-2px)}
+.award a,.award b{color:var(--tink)}
+.open{max-width:440px}
+/* polaroid + pinned resume */
+.polaroid{position:relative;margin:0;flex:none;width:190px;background:#fff;padding:10px 10px 12px;border:1px solid rgba(0,0,0,.1);box-shadow:3px 5px 0 rgba(0,0,0,.14),0 12px 16px -10px rgba(0,0,0,.45);transform:rotate(-2.5deg);transition:transform .2s}
+.polaroid:hover{transform:rotate(0)}
+.polaroid::before{content:"";position:absolute;top:-11px;left:50%;width:70px;height:22px;transform:translateX(-50%) rotate(2deg);background:rgba(246,230,166,.85);box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.hero .polaroid img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border:0;border-radius:0;box-shadow:none;transform:none}
+.polaroid figcaption{font:400 1.5rem "Patrick Hand","Comic Sans MS","Chalkboard SE",sans-serif;color:#2a2723;text-align:center;margin-top:8px;line-height:1}
+.pinned{position:relative;display:block;flex:none;width:150px;text-decoration:none;transform:rotate(2.5deg);transition:transform .2s;color:var(--ink)}
+.pinned:hover{transform:rotate(0) translateY(-3px)}
+.pinned img{width:100%;background:#fff;border:1px solid rgba(0,0,0,.25);box-shadow:3px 5px 0 rgba(0,0,0,.14),0 12px 16px -10px rgba(0,0,0,.45)}
+.pinned span{display:block;text-align:center;font:400 1.3rem "Patrick Hand","Comic Sans MS","Chalkboard SE",sans-serif;margin-top:8px}
+.pinned.lg{width:230px}
+/* desk lamp toggle */
+.lamp{background:var(--card);border:2px solid var(--line);border-radius:3px;width:38px;height:34px;margin-left:20px;padding:0;color:var(--ink);cursor:pointer;display:inline-grid;place-items:center;vertical-align:middle;transition:transform .1s,box-shadow .1s}
+.lamp:hover{transform:translate(-1px,-1px);box-shadow:2px 2px 0 var(--sh)}
+.lamp svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lamp .rays{display:none}
+:root[data-theme="dark"] .lamp .rays{display:inline}:root[data-theme="dark"] .lamp .shade{fill:var(--t3)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .lamp .rays{display:inline}:root:not([data-theme="light"]) .lamp .shade{fill:var(--t3)}}
+/* repo cards */
+.repo{position:relative}.repo h3 a{color:var(--ink);text-decoration:none}.repo h3 a::after{content:"";position:absolute;inset:0}
+.repo .tags{font:500 .75rem "JetBrains Mono",monospace;color:var(--mute);margin-top:8px}
+.repo .chip{position:relative;z-index:1;margin-top:10px}
+/* small interactions */
+.btn:active,.chip:active{transform:translate(2px,2px);box-shadow:none}
+.card:active{transform:translate(0,0)!important;box-shadow:2px 2px 0 var(--sh)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.award b,.tldr b{font-weight:400;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
+.award a{font-weight:400}
+/* skills as sticky notes with a folded corner */
+.box{border:0!important;border-radius:2px;position:relative;box-shadow:3px 4px 0 rgba(0,0,0,.13),0 12px 14px -10px rgba(0,0,0,.4);padding:12px 20px 30px;transform:rotate(-.8deg);transition:transform .18s}
+.box:nth-child(2){transform:rotate(.7deg)}.box:nth-child(3){transform:rotate(-.4deg)}.box:nth-child(4){transform:rotate(.9deg)}
+.box:hover{transform:rotate(0) translateY(-2px)}
+.box::after{content:"";position:absolute;right:0;bottom:0;width:30px;height:30px;background:linear-gradient(135deg,rgba(0,0,0,.2) 50%,var(--bg) 50%)}
+/* page title accent: pastel swatch strip instead of a highlighter */
+h1>span{background:none}
+h1::after{content:"";display:block;width:96px;height:7px;margin-top:12px;border-radius:4px;background:linear-gradient(90deg,var(--t1) 0 25%,var(--t2) 25% 50%,var(--t3) 50% 75%,var(--t4) 75%)}
+.chip.pri{background:var(--acc);color:var(--accink);font-weight:700;box-shadow:2px 2px 0 var(--sh)}
+.cta{gap:10px}
+/* softer, smaller TL;DR */
+.tldr{background:color-mix(in srgb,var(--t5) 28%,transparent);border-left:3px solid var(--t5);border-radius:3px;transform:none;box-shadow:none;font:400 .92rem/1.5 "Karla",system-ui,sans-serif;padding:10px 16px;margin:18px 0;max-width:520px;transition:none}
+.tldr:hover{transform:none}
+.tldr::before{display:none}
+.tldr .nt{font:700 .7rem "JetBrains Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.tldr li{margin:2px 0}
+.tldr b{font-weight:700;text-decoration:none}
+.ytfallback{position:relative;display:block;aspect-ratio:16/9;margin:24px 0;border:2px solid var(--line);border-radius:4px;overflow:hidden;background:#000;text-decoration:none}
+.ytfallback img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.ytfallback span{position:absolute;inset:0;display:grid;place-content:center;text-align:center;color:#fff;font:700 1.2rem "Fraunces",Georgia,serif;gap:6px}
+.ytfallback small{font:500 .72rem "JetBrains Mono",monospace;opacity:.85;max-width:380px}
+
+/* photo polaroids */
+h2{clear:both}
+.polaroid img{display:block;width:100%;object-fit:cover}
+.polaroid.right{float:right;width:230px;margin:6px 0 14px 26px;transform:rotate(2.2deg)}
+.polaroid.right:hover{transform:rotate(0)}
+.cols>.polaroid{align-self:start;justify-self:center;margin-top:8px;transform:rotate(-2deg)}
+.cols>.polaroid:hover{transform:rotate(0)}
+@media(max-width:560px){.polaroid.right{float:none;margin:20px auto;display:block}}
